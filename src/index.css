@@ -1,0 +1,33 @@
+.circleborder {
+    position: absolute;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    right: -22.5%;
+    top: -300px;
+    transform: rotateY(-50deg) rotateX(45deg) rotateZ(40deg);
+}
+
+.short-intro {
+    position: absolute;
+    width: fit-content;
+    display: inline-block;
+    top: 200px;
+    left: 15%;
+    text-align: right;
+}
+
+.hi{
+    font-family: 'FOT-NewRodin Pro DB';
+    font-size: 46px;
+}
+
+.name{
+    font-family: 'BM Space A9';
+    font-size: 76px;
+}
+
+.who_am_i{
+    font-family: 'Gaeul';    
+    font-size: 26px;
+}
