@@ -1,24 +1,37 @@
+import { useState, useEffect } from 'react';
+import border from '../static/circleborder.png';
+import Typewriter from './Typewriter';
+
 export default function App() {
+    const [hovered, setHovered] = useState(false);
+    const [step, setStep] = useState(0);
+
+    useEffect(() => {
+        if (step < 3) {
+            const timer = setTimeout(() => setStep(step + 1), 300); // Adjust delay as needed
+            return () => clearTimeout(timer);
+        }
+    }, [step]);
+
     return (
-        <div>
+        <div className='Welcome'>
             <div className="short-intro">
                 <span className="hi">Hi I'm</span><br />
-                <span className="name">KURIEN S<br />NAKKARA</span><br />
-                <span className="who_am_i">Front End Developer<br />
-                    UI Design <br />
-                    AI enthusiast</span>
+                <span className='hoverme'>hover me</span>
+                <span className="name"
+                    onMouseEnter={() => setHovered(true)}
+                    onMouseLeave={() => setHovered(false)}
+                >
+                    {hovered ? <a className='glitchGithub' href='https://github.com/falood4'>@falood4</a> : <>KURIEN S<br />NAKKARA</>}
+                </span><br />
+                <span className="who_am_i">
+                    {step > 0 && <Typewriter text="Front End Developer" />}
+                    {step > 1 && <><br /><Typewriter text="UI Designer" /></>}
+                    {step > 2 && <><br /><Typewriter text="AI Enthusiast" /></>}
+                </span>
             </div>
 
-            <svg className="circleborder" width="1200" height="1200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#66b2ff" />
-                        <stop offset="20%" stop-color="#66b2ff" />
-                        <stop offset="100%" stop-color="#001f4d" />
-                    </linearGradient>
-                </defs>
-                <circle cx="100" cy="100" r="90" fill="none" stroke="url(#ringGradient)" stroke-width="20" />
-            </svg>
+            <img className="circleborder" src={border} />
         </div>
-    )
+    );
 }

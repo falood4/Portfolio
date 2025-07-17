@@ -1,33 +1,156 @@
-.circleborder {
-    position: absolute;
-    display: block;
-    max-width: 100%;
-    height: auto;
-    right: -22.5%;
-    top: -300px;
-    transform: rotateY(-50deg) rotateX(45deg) rotateZ(40deg);
+.Welcome {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circleborder{
+    position: relative;
+    right: -50px;
+    min-width: 400px;
+    max-width: 700px;
+    transform: translateX(-50px);
+    opacity: 0;
+    animation: profpic 1s forwards;
+}
+
+@keyframes profpic {
+0%{
+    opacity: 0;
+    transform: translateX(0px);
+}
+ 100%{
+    opacity: 1;
+    transform: translateX(-50px);
+ }
 }
 
 .short-intro {
-    position: absolute;
-    width: fit-content;
-    display: inline-block;
-    top: 200px;
-    left: 15%;
+    min-width: 400px;
+    max-width: 472.898px;
+    position: relative;
+    top: 150px;
+    left: 150px;
+    transform: translateX(50px);
+    opacity: 0;
+    animation: bioreveal 1s forwards;
     text-align: right;
 }
 
-.hi{
+.hi {
     font-family: 'FOT-NewRodin Pro DB';
     font-size: 46px;
 }
 
-.name{
-    font-family: 'BM Space A9';
-    font-size: 76px;
+.hoverme{
+    background-color: red;
+    padding: 5px;
+    font-family: 'Lucida Console';
+    font-size: 10px;
+    border-radius: 20px;
+    position: absolute;
+    right: 450px;
+    top: 60px;
+    text-align: center;
+    animation: hovermeAnim 1.5s forwards;
 }
 
-.who_am_i{
-    font-family: 'Gaeul';    
+@keyframes hovermeAnim {
+    0%{
+        opacity: 0;
+        transform: rotate(70deg);
+        transform-origin: bottom left;
+    }
+    60%{
+        opacity: 0;
+        transform: rotate(70deg);
+        transform-origin: bottom left;
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(-20deg);
+        transform-origin: bottom left;
+    }
+}
+
+.name {
+    font-family: 'BM Space A9';
+    font-size: 76px;
+    display: flex;
+    min-height: 160px;
+    text-align: right;
+    align-items: center;
+}
+.glitchGithub {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    animation: glitch 350ms infinite;
+}
+.glitchGithub::after{
+    content: "@falood4";
+    color: rgb(204, 231, 251);
+    position: absolute;
+    top:0%;
+    left: 0px;
+    transform: translate(0.05em,0.05em);
+    animation: glitch 450ms infinite;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+            -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+            -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    14% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+            -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+            -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    15% {
+        text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+            0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+            -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    49% {
+        text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+            0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+            -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    50% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+            0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    99% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+            0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+
+    100% {
+        text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+            -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+            -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+}
+
+.who_am_i {
+    font-family: 'Gaeul';
     font-size: 26px;
+}
+
+@keyframes bioreveal {
+0%{
+    opacity: 0;
+    transform: translateX(0px);
+}
+ 100%{
+    opacity: 1;
+    transform: translateX(50px);
+ }
 }
