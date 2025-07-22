@@ -18,7 +18,7 @@ export default function App() {
             <div className="short-intro">
                 <span className="hi">Hi I'm</span><br />
                 <span className='hoverme'>hover me</span>
-                <span className="name"
+                <span className="title"
                     onMouseEnter={() => setHovered(true)}
                     onMouseLeave={() => setHovered(false)}
                 >
@@ -33,5 +33,6 @@ export default function App() {
 
             <img className="circleborder" src={border} />
         </div>
+        
     );
 }

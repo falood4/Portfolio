@@ -1,7 +1,20 @@
+.body{
+    overflow: hidden
+}
+.threads-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  bottom: -30px;
+  z-index: -5;
+}
+/* Welcome */
+
 .Welcome {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .circleborder{
@@ -44,9 +57,9 @@
 
 .hoverme{
     background-color: red;
-    padding: 5px;
+    padding: 0.5em;
     font-family: 'Lucida Console';
-    font-size: 10px;
+    font-size: 12px;
     border-radius: 20px;
     position: absolute;
     right: 450px;
@@ -73,7 +86,7 @@
     }
 }
 
-.name {
+.title {
     font-family: 'BM Space A9';
     font-size: 76px;
     display: flex;
@@ -153,4 +166,96 @@
     opacity: 1;
     transform: translateX(50px);
  }
+}
+
+/* Skill */
+
+.HardSkills{
+    position: relative;
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
+    float: left;
+    margin: 10em;
+
+}
+.SoftSkills{
+    position: relative;
+    border-radius: 50%; 
+    margin: 50em 10em 10em 10em;
+    width: 20em;
+    height: 20em;
+    float: right;
+}
+
+li{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transform-origin: bottom left;
+}
+
+.sector {
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    width: 50%; height: 50%;
+    padding-top: 20px;    
+    transform: skewY(30deg) rotate(15deg); 
+}
+
+.HardSkills img, .SoftSkills img{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 0px;
+    left: 12.5%;
+    transform: rotate(15deg);
+    border-radius: 1em;
+}
+
+.HardSkills li:first-child , .SoftSkills li:first-child { 
+    transform: rotate(0deg) skewY(-30deg);     
+}
+.HardSkills li:nth-child(2), .SoftSkills li:nth-child(2) {   
+    transform: rotate(60deg) skewY(-30deg);     
+}
+.HardSkills li:nth-child(3), .SoftSkills li:nth-child(3) {
+    transform: rotate(120deg) skewY(-30deg);    
+}
+.HardSkills li:nth-child(4), .SoftSkills li:nth-child(4) {
+    transform: rotate(180deg) skewY(-30deg);    
+}
+.HardSkills li:nth-child(5), .SoftSkills li:nth-child(5) {
+    transform: rotate(240deg) skewY(-30deg);    
+}
+.HardSkills li:nth-child(6), .SoftSkills li:nth-child(6) {
+    transform: rotate(300deg) skewY(-30deg);    
+}
+
+.HardSkills li:first-child , .SoftSkills li:first-child  {
+    background: green; 
+}
+.HardSkills li:nth-child(2), .SoftSkills li:nth-child(2)  {
+    background: tomato; 
+}
+.HardSkills li:nth-child(3), .SoftSkills li:nth-child(3)  {
+    background: aqua; 
+}
+.HardSkills li:nth-child(4), .SoftSkills li:nth-child(4)  {
+    background: yellow;  
+}
+.HardSkills li:nth-child(5), .SoftSkills li:nth-child(5)  {
+    background: orange;  
+}
+.HardSkills li:nth-child(6), .SoftSkills li:nth-child(6)  {
+    background: purple;  
+}
+
+.sector img:hover{
+    transform: scale(120%) rotate(15deg);
+    transition: transform 100ms;
 }

@@ -14,7 +14,7 @@ export default function WhoAmITypewriter() {
     if (visibleCount < messages.length) {
       const timer = setTimeout(() => {
         setVisibleCount(visibleCount + 1);
-      }, 500); // delay in ms
+      }, 750); // delay in ms
       return () => clearTimeout(timer);
     }
   }, [visibleCount]);
