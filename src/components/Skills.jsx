@@ -6,58 +6,74 @@ export default function Skill() {
         <div className="Skills">
             <span className="title" style={{ width: "fit-content", margin: "0 auto" }}>SKILLS</span>
             <ul className="HardSkills">
-                <li className="Python">
+                <li>
                     <div className="sector"><img src="src\static\python.png"></img></div>
                 </li>
-                <li className="JavaScript">
+                <li>
                     <div className="sector"><img src="src\static\js.png"></img></div>
                 </li>
-                <li className="React">
+                <li>
                     <div className="sector"><img src="src\static\physics.png"></img></div>
                 </li>
-                <li className="Flutter">
+                <li>
                     <div className="sector"><img src="src\static\flutter.png"></img></div>
                 </li>
-                <li className="Flask">
+                <li>
                     <div className="sector"><img src="src\static\flask.png"></img></div>
                 </li>
-                <li className="HTML/CSS">
+                <li>
                     <div className="sector"><img src="src\static\html&css.png"></img></div>
                 </li>
-                <li className="Stick">
-
-                </li>
             </ul>
+
+            <h3 className="h3WRKS" style={{ position: "relative", top: "10%", left: "20%" }} >Hard Skills</h3>
+            <div className="SkillBubbles">
+                <span>Python</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>HTML/CSS</span>
+                <span>Flutter</span>
+                <span>C++</span>
+                <span>Prompt Engineering</span>
+            </div>
+
 
             <ul className="SoftSkills">
-                <li className="Python">
-                    {/*  <img src="src\static\python.png"></img>Python */}<div className="sector">
-                        Team Coordination</div>
+                <li>
+                    <div className="sector">
+                        <img src="src\static\organization_10822618.png"></img></div>
                 </li>
-                <li className="JavaScript">
-                    {/*  <img src="src\static\js.png"></img>JavaScript   */}<div className="sector">
-                        Effective Communicater</div>
+                <li>
+                    <div className="sector">
+                        <img src="src\static\effective-communication_16743787.png"></img></div>
                 </li>
-                <li className="React">
-                    {/*  <img src="src\static\physics.png"></img>React   */}<div className="sector">
-                        Time Managment</div>
+                <li>
+                    <div className="sector">
+                        <img src="src\static\working-time_10635269.png"></img></div>
                 </li>
-                <li className="Flutter">
-                    {/*  <img src="src\static\flask.png"</img>Flutter*/}<div className="sector">
-                        Creativity and Intuition</div>
+                <li>
+                    <div className="sector">
+                        <img src="src\static\creativity.png"></img></div>
                 </li>
-                <li className="Flask">
-                    {/*  <img src="src\static\flask.png"></img>Flask  */}<div className="sector">
-                        Flexible and Adaptable</div>
+                <li>
+                    <div className="sector">
+                        <img src="src\static\flexibility.png"></img></div>
                 </li>
-                <li className="HTML/CSS">
-                    {/*  <img src="src\static\html&css.png"></img>HTML & CSS  */}<div className="sector">
-                        English Proficieny</div>
-                </li>
-                <li className="Stick">
-
+                <li>
+                    <div className="sector">
+                        <img src="src\static\microphone.png"></img></div>
                 </li>
             </ul>
+
+            <h3 className="h3WRKS" style={{ position: "relative", top: "-15%", left: "20%" }} >Soft Skills</h3>
+            <div className="SkillBubbles SoftBubbles">
+                <span>Team Coordination</span>
+                <span>Effective Communicater</span>
+                <span>Time Managment</span>
+                <span>Creativity and Intuition</span>
+                <span>Flexible and Adaptable</span>
+                <span>English Proficieny</span>
+            </div>
         </div>
     )
 }
