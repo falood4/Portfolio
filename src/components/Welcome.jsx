@@ -32,7 +32,8 @@ export default function App() {
             </div>
 
             <img className="circleborder" src={border} />
+
         </div>
-        
+
     );
 }

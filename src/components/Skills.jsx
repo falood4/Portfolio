@@ -26,7 +26,7 @@ export default function Skill() {
                 </li>
             </ul>
 
-            <h3 className="h3WRKS" style={{ position: "relative", top: "10%", left: "20%" }} >Hard Skills</h3>
+            <h3 className="h3WRKS" style={{ position: "relative", top: "10%", left: "20%" , zIndex: "-1"}} >Hard Skills</h3>
             <div className="SkillBubbles">
                 <span>Python</span>
                 <span>JavaScript</span>
@@ -65,7 +65,7 @@ export default function Skill() {
                 </li>
             </ul>
 
-            <h3 className="h3WRKS" style={{ position: "relative", top: "-15%", left: "20%" }} >Soft Skills</h3>
+            <h3 className="h3WRKS" style={{ position: "relative", top: "-15%", left: "20%" , zIndex: "-1"}} >Soft Skills</h3>
             <div className="SkillBubbles SoftBubbles">
                 <span>Team Coordination</span>
                 <span>Effective Communicater</span>
