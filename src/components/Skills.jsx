@@ -4,7 +4,10 @@
 export default function Skill() {
     return (
         <div className="Skills">
-            <span className="title" style={{ width: "fit-content", margin: "0 auto" }}>SKILLS</span>
+            <span className="title" style={{ width: "fit-content", margin: "0 auto" }}>
+                <div className="headingBG" id="blue"><div className="headingBG" id="red"></div></div>
+                    SKILLS
+            </span>
             <ul className="HardSkills">
                 <li>
                     <div className="sector"><img src="src\static\python.png"></img></div>

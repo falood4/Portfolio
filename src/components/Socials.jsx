@@ -1,6 +1,6 @@
 export default function Socials() {
     return (
-        <div>
+        <div class="Socials">
             <span className="title" style={{ width: "fit-content", margin: "0 auto" }}>SOCIALS</span>
             <div class="socialsHex">
                 <div class="hexagon">
