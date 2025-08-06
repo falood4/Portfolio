@@ -1,5 +1,16 @@
 import { useRef, useEffect } from "react";
 
+import empress from '../static/Empress-0.png';
+import lingo from '../static/LINGOJINGO.png';
+import priestess from '../static/Priestess-0.png';
+import falood4wrks from '../static/falood4wrks.png';
+import magician from '../static/Magician-0.png';
+import calorease from '../static/calorease.png';
+import hierophant from '../static/Hierophant-0.png';
+import upscaler from '../static/upscaler.png';
+import emperor from '../static/Emperor-0.png';
+import qbus from '../static/qbus.png';
+
 export default function Carousel() {
 
     const carouselRef = useRef(null);
@@ -63,10 +74,10 @@ export default function Carousel() {
         <div className="img-carousel" ref={carouselRef}>
             <div className="background1" id="card1">
                 <div className="flip-card-front">
-                    <img src='src\static\Empress-0.png' alt="card3" />
+                    <img src={empress} alt="card3" />
                 </div>
                 <div className="flip-card-back">
-                    <img src='src\static\LINGOJINGO.png' alt="card1" />
+                    <img src={lingo} alt="card1" />
                 </div>
                 <div className="gitLink">
                     <a href="https://github.com/falood4/LINGOJINGO/" target="_blank"
@@ -75,10 +86,10 @@ export default function Carousel() {
             </div>
             <div className="midground1" id="card2">
                 <div className="flip-card-front">
-                    <img src='src\static\Priestess-0.png' alt="card2" />
+                    <img src={priestess} alt="card2" />
                 </div>
                 <div className="flip-card-back">
-                    <img src='src\static\falood4wrks.png' alt="card1" />
+                    <img src={falood4wrks} alt="card1" />
                 </div>
                 <div className="gitLink">
                     <a href="https://github.com/falood4/falood4WRKS/" target="_blank"
@@ -87,10 +98,10 @@ export default function Carousel() {
             </div>
             <div className="foreground" id="card3">
                 <div className="flip-card-front">
-                    <img src='src\static\Magician-0.png' alt="card1" />
+                    <img src={magician} alt="card1" />
                 </div>
                 <div className="flip-card-back">
-                    <img src='src\static\calorease.png' alt="card1" />
+                    <img src={calorease} alt="card1" />
                 </div>
                 <div className="gitLink">
                     <a href="https://github.com/HeinzPaul/Calorease/" target="_blank"
@@ -99,10 +110,10 @@ export default function Carousel() {
             </div>
             <div className="midground2" id="card4">
                 <div className="flip-card-front">
-                    <img src='src\static\Hierophant-0.png' alt="card5" />
+                    <img src={hierophant} alt="card5" />
                 </div>
                 <div className="flip-card-back">
-                    <img src='src\static\upscaler.png' alt="card1" />
+                    <img src={upscaler} alt="card1" />
                 </div>
                 <div className="gitLink">
                     <a href="https://github.com/falood4/4kVideoUpscaler" target="_blank"
@@ -111,10 +122,10 @@ export default function Carousel() {
             </div>
             <div className="background2" id="card5">
                 <div className="flip-card-front">
-                    <img src='src\static\Emperor-0.png' alt="card4" />
+                    <img src={emperor} alt="card4" />
                 </div>
                 <div className="flip-card-back">
-                    <img src='src\static\qbus.png' alt="card1" />
+                    <img src={qbus} alt="card1" />
                 </div>
                 <div className="gitLink">
                     <a href="https://github.com/abelgeostan/QBus" target="_blank"

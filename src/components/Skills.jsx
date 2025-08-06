@@ -1,5 +1,17 @@
 //React, JavaScript, Python, Flask and Flutter
 // Team Communication and Coordination, Flexible and Constant Learner, Time Management, Creativity and Problem Solver
+import python from '../static/python.png';
+import js from '../static/js.png';
+import physics from '../static/physics.png';
+import flutter from '../static/flutter.png';
+import flask from '../static/flask.png';
+import htmlcss from '../static/html&css.png';
+import organization from '../static/organization_10822618.png';
+import communication from '../static/effective-communication_16743787.png';
+import workingTime from '../static/working-time_10635269.png';
+import creativity from '../static/creativity.png';
+import flexibility from '../static/flexibility.png';
+import microphone from '../static/microphone.png';
 
 export default function Skill() {
     return (
@@ -10,22 +22,22 @@ export default function Skill() {
             </span>
             <ul className="HardSkills">
                 <li>
-                    <div className="sector"><img src="src\static\python.png"></img></div>
+                    <div className="sector"><img src={python} alt="Python" /></div>
                 </li>
                 <li>
-                    <div className="sector"><img src="src\static\js.png"></img></div>
+                    <div className="sector"><img src={js} alt="JavaScript" /></div>
                 </li>
                 <li>
-                    <div className="sector"><img src="src\static\physics.png"></img></div>
+                    <div className="sector"><img src={physics} alt="Physics" /></div>
                 </li>
                 <li>
-                    <div className="sector"><img src="src\static\flutter.png"></img></div>
+                    <div className="sector"><img src={flutter} alt="Flutter" /></div>
                 </li>
                 <li>
-                    <div className="sector"><img src="src\static\flask.png"></img></div>
+                    <div className="sector"><img src={flask} alt="Flask" /></div>
                 </li>
                 <li>
-                    <div className="sector"><img src="src\static\html&css.png"></img></div>
+                    <div className="sector"><img src={htmlcss} alt="HTML & CSS" /></div>
                 </li>
             </ul>
 
@@ -44,27 +56,33 @@ export default function Skill() {
             <ul className="SoftSkills">
                 <li>
                     <div className="sector">
-                        <img src="src\static\organization_10822618.png"></img></div>
+                        <img src={organization} alt="Organization" />
+                    </div>
                 </li>
                 <li>
                     <div className="sector">
-                        <img src="src\static\effective-communication_16743787.png"></img></div>
+                        <img src={communication} alt="Effective Communication" />
+                    </div>
                 </li>
                 <li>
                     <div className="sector">
-                        <img src="src\static\working-time_10635269.png"></img></div>
+                        <img src={workingTime} alt="Time Management" />
+                    </div>
                 </li>
                 <li>
                     <div className="sector">
-                        <img src="src\static\creativity.png"></img></div>
+                        <img src={creativity} alt="Creativity" />
+                    </div>
                 </li>
                 <li>
                     <div className="sector">
-                        <img src="src\static\flexibility.png"></img></div>
+                        <img src={flexibility} alt="Flexibility" />
+                    </div>
                 </li>
                 <li>
                     <div className="sector">
-                        <img src="src\static\microphone.png"></img></div>
+                        <img src={microphone} alt="Microphone" />
+                    </div>
                 </li>
             </ul>
 
