@@ -10,7 +10,7 @@ export default function Skill() {
             </span>
             <ul className="HardSkills">
                 <li>
-                    <div className="sector"><img src="src\static\python.png"></img></div>
+                    <div className="sector"><img src="src/static/python.png"></img></div>
                 </li>
                 <li>
                     <div className="sector"><img src="src\static\js.png"></img></div>
