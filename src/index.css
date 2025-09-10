@@ -20,8 +20,8 @@
 }
 
 @font-face {
-  font-family: 'Gaeul';
-  src: url('public/fonts/D.ttf');
+  font-family: 'FOT-Skip STD B';
+  src: url('public/fonts/FOT-Skip STD B.otf');
   font-weight: normal;
   font-style: normal;
 }
@@ -191,8 +191,8 @@ body {
 }
 
 .who_am_i {
-    font-family: 'Gaeul';
-    font-size: 26px;
+    font-family: 'FOT-Skip STD B';
+    font-size: 20px;
 }
 
 @keyframes bioreveal {
@@ -377,8 +377,8 @@ li {
     padding: 1em;
     min-width: 26px;
     border-radius: 1.5em;
-    font-size: 22px;
-    font-family: 'Gaeul';
+    font-size: 18px;
+    font-family: 'FOT-Skip STD B';
     font-weight: 500;
     color: #ffffff;
     background: linear-gradient(90deg, rgb(56, 154, 163) 23%, rgba(18, 105, 204, 1) 100%);
