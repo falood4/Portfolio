@@ -1,27 +1,27 @@
 @font-face {
   font-family: 'BM Space A9';
-  src: url('./fonts/BMSPA__.TTF');
+  src: url('public/fonts/BMSPA__.TTF');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FOT-NewRodin Pro DB';
-  src: url('/fonts/FOT-NewRodin Pro DB.otf');
+  src: url('public/fonts/FOT-NewRodin Pro DB.otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lucida Console';
-  src: url('./fonts/lucon.ttf');
+  src: url('public/fonts/lucon.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gaeul';
-  src: url('./fonts/D.ttf');
+  src: url('public/fonts/D.ttf');
   font-weight: normal;
   font-style: normal;
 }
