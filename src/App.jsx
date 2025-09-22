@@ -22,7 +22,6 @@ export default function App() {
                 </p>
 
             </div>
-            <Threads amplitude={1.25} distance={1.2} enableMouseInteraction={false} />
             <Skills />
             <Projects />
             <Socials />
