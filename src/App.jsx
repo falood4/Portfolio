@@ -1,5 +1,4 @@
 import Welcome from './components/Welcome.jsx'
-import Threads from './components/Threads';
 import Skills from './components/Skills.jsx'
 import Projects from './components/Projects.jsx';
 import Socials from './components/Socials.jsx';
