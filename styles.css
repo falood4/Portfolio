@@ -1,10 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Lexend:wght@100..900&family=Prosto+One&display=swap');
+
 .WRKSbody {
-  font-family: 'Lexend', sans-serif;
-  margin: 10px;
+    font-family: 'Lexend', sans-serif;
+    margin: 10px;
 }
 
-.WRKSbodyDarkMode{
+@font-face {
+    font-family: 'BM Space A9';
+    src: url('public/fonts/BMSPA__.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FOT-NewRodin Pro DB';
+    src: url('public/fonts/FOT-NewRodin Pro DB.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lucida Console';
+    src: url('public/fonts/lucon.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FOT-Skip STD B';
+    src: url('public/fonts/FOT-Skip STD B.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.WRKSbodyDarkMode {
     font-family: 'Lexend', sans-serif;
     margin: 10px;
     color: white;
@@ -12,13 +41,13 @@
 }
 
 /* these styles are for demo site and are NOT PART OF FALOOD4WRKS */
-#slider{
+#slider {
     opacity: 0;
     width: 0px;
     height: 0px;
 }
 
-.sliderbutton{
+.sliderbutton {
     background-color: rgb(198, 198, 198);
     height: 30px;
     width: 60px;
@@ -27,7 +56,8 @@
     border-radius: 15px;
     cursor: pointer;
 }
-.sliderbutton::before{
+
+.sliderbutton::before {
     background-color: white;
     content: "🌜";
     position: absolute;
@@ -37,16 +67,17 @@
     margin: 3px;
     transition: 0.2s;
 }
-input:checked + .sliderbutton{
+
+input:checked+.sliderbutton {
     background-color: #11477c;
 }
 
-input:checked + .sliderbutton::before{
+input:checked+.sliderbutton::before {
     transform: translateX(25px);
     transition: transform 0.2s;
 }
 
-.githubfooter a{
+.githubfooter a {
     display: flex;
     justify-items: center;
     align-items: center;
@@ -55,7 +86,7 @@ input:checked + .sliderbutton::before{
     margin-bottom: 2rem;
 }
 
-.githubfooter img{
+.githubfooter img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -66,45 +97,51 @@ input:checked + .sliderbutton::before{
 /* falood4WRKS start here */
 
 .h1WRKS {
-  font-family: Electrolize;
-  font-size: 80px;
-  margin: 0px;
-}
-.h2WRKS {
-  font-family:Electrolize;
-  font-size: 72px;
-  margin: 0px;
-}
-.h3WRKS {
-  font-family:Electrolize;
-  font-size: 64px;
-  margin: 0px;
-}
-.h4WRKS {
-  font-family:Electrolize;
-  font-size: 56px;
-  margin: 0px;
-}
-.h5WRKS {
-  font-family:Electrolize;
-  font-size: 48px;
-  margin: 0px;
-}
-.h6WRKS {
-  font-family:Electrolize;
-  font-size: 40px;
-  margin: 0px;
+    font-family: Electrolize;
+    font-size: 80px;
+    margin: 0px;
 }
 
-.ul-li-WRKS{
+.h2WRKS {
+    font-family: Electrolize;
+    font-size: 72px;
+    margin: 0px;
+}
+
+.h3WRKS {
+    font-family: Electrolize;
+    font-size: 64px;
+    margin: 0px;
+}
+
+.h4WRKS {
+    font-family: Electrolize;
+    font-size: 56px;
+    margin: 0px;
+}
+
+.h5WRKS {
+    font-family: Electrolize;
+    font-size: 48px;
+    margin: 0px;
+}
+
+.h6WRKS {
+    font-family: Electrolize;
+    font-size: 40px;
+    margin: 0px;
+}
+
+.ul-li-WRKS {
     margin: 5px;
 }
 
 .ul-li-WRKS::marker {
-  content: "●  "; /* any Unicode symbol or emoji */
+    content: "●  ";
+    /* any Unicode symbol or emoji */
 }
 
-.ol-li-WRKS{
+.ol-li-WRKS {
     margin: 5px;
 }
 
@@ -112,7 +149,7 @@ input:checked + .sliderbutton::before{
     font-size: 1.2rem;
 }
 
-.codeWRKS{
+.codeWRKS {
     max-width: fit-content;
     overflow-x: auto;
     padding: 5px;
@@ -121,8 +158,8 @@ input:checked + .sliderbutton::before{
     color: white;
 }
 
-.codeblock{
-    display:block;
+.codeblock {
+    display: block;
     overflow-x: auto;
     margin: 10px;
     padding: 10px;
@@ -131,18 +168,19 @@ input:checked + .sliderbutton::before{
     color: white;
 }
 
-.addressWRKS{
+.addressWRKS {
     font-style: normal;
     font-family: 'Lucida Console';
 }
 
-.a-WRKS,.a-WRKS:visited,
+.a-WRKS,
+.a-WRKS:visited,
 .a-WRKS:active {
     text-decoration: none;
     position: relative;
 }
 
-.a-WRKS:after{
+.a-WRKS:after {
     content: "";
     left: 0;
     bottom: 0;
@@ -152,128 +190,142 @@ input:checked + .sliderbutton::before{
     transition: width 0.2s;
     background: currentColor;
 }
+
 .a-WRKS:hover::after {
-  width: 100%;
+    width: 100%;
 }
 
 .WRKSbodyDarkMode .a-WRKS,
 .WRKSbodyDarkMode .a-WRKS:active {
     color: #7ecbff;
 }
-.WRKSbodyDarkMode .a-WRKS:visited{
+
+.WRKSbodyDarkMode .a-WRKS:visited {
     color: pink;
 }
+
 .WRKSbodyDarkMode .a-WRKS:after {
-    background: #7ecbff; 
+    background: #7ecbff;
 }
 
-.qouteWRKS{
+.qouteWRKS {
     font-style: italic;
-    font-weight:350;
+    font-weight: 350;
 }
 
-.abbrWRKS{
+.abbrWRKS {
     font-weight: 600;
 }
 
-.emphasisWRKS{
+.emphasisWRKS {
     font-weight: 500;
 }
 
-.kbdWRKS{
+.kbdWRKS {
     font-size: 1.1rem;
     background-color: gainsboro;
     padding: 2px;
 }
-.WRKSbodyDarkMode .kbdWRKS{
+
+.WRKSbodyDarkMode .kbdWRKS {
     background-color: rgb(41, 41, 41);
 }
 
-.markWRKS{
+.markWRKS {
     border-radius: 10px;
     padding: 2px;
 }
 
-.sampWRKS{
+.sampWRKS {
     background-color: rgb(224, 224, 223);
     padding: 2px;
 }
-.WRKSbodyDarkMode .sampWRKS{
+
+.WRKSbodyDarkMode .sampWRKS {
     background-color: rgb(176, 176, 176);
     color: #222;
     padding: 2px;
 }
 
-.timeWRKS{
+.timeWRKS {
     font-family: 'Courier New';
 }
 
-.blockquoteWRKS{
+.blockquoteWRKS {
     background-color: rgb(224, 224, 223);
     border-radius: 1.1rem;
     padding-inline: 1.1rem;
     max-width: fit-content;
 }
-.WRKSbodyDarkMode .blockquoteWRKS{
+
+.WRKSbodyDarkMode .blockquoteWRKS {
     background-color: rgb(176, 176, 176);
     color: #222;
 }
-.dt-WRKS{
+
+.dt-WRKS {
     font-weight: 550;
     font-size: 1.1rem;
 }
 
-.pre-WRKS{
+.pre-WRKS {
     background-color: rgb(224, 224, 223);
     max-width: fit-content;
     padding: 5px;
     border-radius: 1rem;
 }
-.WRKSbodyDarkMode .pre-WRKS{
+
+.WRKSbodyDarkMode .pre-WRKS {
     background-color: rgb(176, 176, 176);
     color: #222;
 }
 
-.audioWRKS{
+.audioWRKS {
     border-radius: 2rem;
     background-color: rgb(71, 71, 71);
 }
 
-.tableWRKS{
+.tableWRKS {
     border: 2px solid #333;
     border-collapse: collapse;
-    
+
     padding: 5px;
 }
-.tableheaderWRKS{
+
+.tableheaderWRKS {
     background-color: rgb(42, 63, 100);
     color: white;
 }
+
 .tabledataWRKS {
     border: 2px solid #333;
     transition: background-color 0.25s;
 }
+
 .tabledataWRKS:hover {
     background-color: rgb(105, 142, 205);
 }
 
-.WRKSbodyDarkMode .tableWRKS{
+.WRKSbodyDarkMode .tableWRKS {
     border: 2px solid white;
 }
-.WRKSbodyDarkMode .tableheaderWRKS{
+
+.WRKSbodyDarkMode .tableheaderWRKS {
     background-color: rgb(155, 192, 255);
     color: rgb(42, 63, 100);
 }
-.WRKSbodyDarkMode .tabledataWRKS {    
+
+.WRKSbodyDarkMode .tabledataWRKS {
     border: 2px solid white;
     transition: background-color 0.25s;
 }
+
 .WRKSbodyDarkMode .tabledataWRKS:hover {
     background-color: rgb(79, 118, 184);
 }
 
 
-.buttonWRKS{
+.buttonWRKS {
     color: white;
     padding: 10px;
     background-color: rgb(42, 63, 100);
@@ -281,12 +333,15 @@ input:checked + .sliderbutton::before{
     border: 1.5px solid black;
     cursor: pointer;
 }
-.buttonWRKS:enabled:hover{
+
+.buttonWRKS:enabled:hover {
     box-shadow: 0px 0px 10px 2px rgb(42, 63, 100);
     transform: scale(110%);
     transition: transform 0.1s, box-shadow 0.25s;
 }
-.buttonWRKS:disabled, button[disabled]{
+
+.buttonWRKS:disabled,
+button[disabled] {
     color: rgb(232, 229, 229);
     background-color: rgb(74, 86, 107);
     padding: 10px;
@@ -295,7 +350,7 @@ input:checked + .sliderbutton::before{
     cursor: pointer;
 }
 
-.inputWRKS{
+.inputWRKS {
     padding: 5px;
     padding-left: 12px;
     padding-right: 12px;
@@ -304,35 +359,39 @@ input:checked + .sliderbutton::before{
     border-radius: 15px;
 }
 
-.inputWRKS:focus{
+.inputWRKS:focus {
     border: 3px solid rgb(42, 63, 100);
     outline: none;
 }
 
-.fieldsetwrks{
+.fieldsetwrks {
     border: none;
-    border-radius: 10px;    
-    width:fit-content;
+    border-radius: 10px;
+    width: fit-content;
     background-color: rgb(42, 63, 100);
 }
-.fieldsetwrks legend{
+
+.fieldsetwrks legend {
     background-color: white;
     border-radius: 5px;
     font-size: larger;
 }
-.WRKSbodyDarkMode .fieldsetwrks{
+
+.WRKSbodyDarkMode .fieldsetwrks {
     color: black;
 }
-.fieldsetwrks label{
+
+.fieldsetwrks label {
     display: block;
-    width:fit-content;
+    width: fit-content;
     color: white;
 }
-.fieldsetwrks input{
+
+.fieldsetwrks input {
     outline: none;
 }
 
-.formWRKS{
+.formWRKS {
     display: block;
     color: black;
     background-color: rgb(224, 224, 223);
@@ -341,24 +400,26 @@ input:checked + .sliderbutton::before{
     padding: 1.2rem;
     border-radius: 1.1rem;
 }
-.formWRKS label{
+
+.formWRKS label {
     display: block;
     padding: 2px;
 }
 
-.formWRKS input{
+.formWRKS input {
     display: block;
     width: 400px;
     margin-bottom: 10px;
 }
-.formWRKS #surprise{
+
+.formWRKS #surprise {
     position: absolute;
     left: 10rem;
     max-width: fit-content;
     margin-bottom: 10px;
 }
 
-.selectwrks{
+.selectwrks {
     padding: 10px;
     background-color: rgb(42, 63, 100);
     color: white;
@@ -367,12 +428,15 @@ input:checked + .sliderbutton::before{
     text-align: center;
     min-width: 50px;
 }
+
 .selectwrks option {
-    background-color: #e0e0df; /* dropdown list background */
-    color: #222;             /* dropdown list text color */
+    background-color: #e0e0df;
+    /* dropdown list background */
+    color: #222;
+    /* dropdown list text color */
 }
 
-.textareaWRKS{
+.textareaWRKS {
     resize: none;
     outline: 2px solid rgb(29, 41, 62);
     border-radius: 2rem;
@@ -380,12 +444,13 @@ input:checked + .sliderbutton::before{
     border: none;
 }
 
-.detailsWRKS{
+.detailsWRKS {
     font-size: 1rem;
     background-color: rgb(224, 224, 223);
     width: fit-content;
 }
-.detailsWRKS summary{
+
+.detailsWRKS summary {
     font-family: Electrolize;
     font-size: 1.3rem;
     font-weight: bold;
@@ -396,18 +461,20 @@ input:checked + .sliderbutton::before{
     background-color: white;
     color: rgb(29, 41, 62);
 }
-.WRKSbodyDarkMode .detailsWRKS summary{
+
+.WRKSbodyDarkMode .detailsWRKS summary {
     background-color: rgb(29, 41, 62);
     color: white;
 }
 
-.progressWRKS{
+.progressWRKS {
     height: 1.25rem;
     appearance: none;
     border-radius: 1rem;
     border: 1px inset rgb(42, 63, 100);
     overflow: hidden;
 }
+
 .progressWRKS::-webkit-progress-bar {
     background-color: #fff;
     border-radius: 1rem;
@@ -419,7 +486,7 @@ input:checked + .sliderbutton::before{
     transition: width 0.2s;
 }
 
-.cardWRKS{
+.cardWRKS {
     display: block;
     max-width: 800px;
     border: 2px black solid;
@@ -427,20 +494,23 @@ input:checked + .sliderbutton::before{
     border-radius: 0.5rem;
     padding: 1rem;
     background-color: rgb(36, 111, 182);
-    color : rgb(224, 224, 223);
+    color: rgb(224, 224, 223);
     box-shadow: 0px 5px 10px 2px rgb(76, 76, 76);
 }
-.cardWRKS-button-container{
+
+.cardWRKS-button-container {
     display: flex;
     width: 100%;
-} 
-.cardWRKS-button-primary{
+}
+
+.cardWRKS-button-primary {
     width: 100%;
     color: rgb(42, 63, 100);
     background-color: rgb(224, 224, 223);
     margin: 10px;
 }
-.cardWRKS-button-secondary{
+
+.cardWRKS-button-secondary {
     width: 100%;
     margin: 10px;
 }
